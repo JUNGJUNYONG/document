@@ -23,6 +23,18 @@
 			</div>
 			
 			<div id='right-header'>
+				<div id='header-plus'>
+					<a href='#'>header-plus</a>
+				</div>
+					<a href='#'>plus</a>
+				<div id='header-profil'>
+					<a href='#'>profil</a>
+				
+				</div>
+				<div id='header-bell'>
+					<a href='#'>bell</a>
+				
+				</div>
 			</div>
 		</div>
 		
