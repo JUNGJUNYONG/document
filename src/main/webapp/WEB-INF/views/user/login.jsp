@@ -13,7 +13,6 @@
 </head>
 <body>
 	<div id="container">
-		<c:import url="/WEB-INF/views/includes/header.jsp" />
 		<div id="content">
 			<div id="user">
 				<h1>login</h1>
@@ -24,9 +23,10 @@
 					<input name="password" type="password" value="">
 					<input type="submit" value="로그인">
 				</form>
+				<button>회원가입</button>
+				
 			</div>
 		</div>
-		<c:import url="/WEB-INF/views/includes/navigation.jsp" />
 		<c:import url="/WEB-INF/views/includes/footer.jsp" />
 	</div>
 </body>
