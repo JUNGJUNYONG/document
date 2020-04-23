@@ -23,12 +23,11 @@
 			</div>
 			
 			<div id='right-header'>
-				<div id='header-plus'>
-					<a href='#'>header-plus</a>
+				<div id='header-addmemo'>
+					<a href='#'>addmemo</a>
 				</div>
-					<a href='#'>plus</a>
-				<div id='header-profil'>
-					<a href='#'>profil</a>
+				<div id='header-profile'>
+					<a href='#'>profile</a>
 				
 				</div>
 				<div id='header-bell'>
@@ -39,7 +38,12 @@
 		</div>
 		
 		<div id='contents'>
-			<div id='contents-header'></div>
+			<div id='contents-header'>
+				<div id='contents-header-title'><h3><개인1></h3></div>
+				<div id='contents-header-showinglist'><a href='#'>showinglist</a></div>
+				<div id='contents-header-addgroup'><a href='#'>addgroup</a></div>
+				<div id='contents-header-invite'><a href='#'>invite</a></div>
+			</div>
 			<div id='contents-memo'></div>
 			
 		</div>
