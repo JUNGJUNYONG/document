@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping({"", "/user"})
 public class UserController {
 
-	@RequestMapping("/login")
+	@RequestMapping({"", "/login"})
 	public String login() {
 		return "user/login";
 	}

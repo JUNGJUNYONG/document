@@ -14,7 +14,7 @@ public class MainController {
 	@Autowired
 	MainService mainService;
 	
-	@RequestMapping({"","/main"})
+	@RequestMapping("/main")
 	public String index(Model model) {
 		return "main/index";
 	}
