@@ -5,7 +5,7 @@ function setConnected(connected) {
 }
 
 function connect() {
-	ws = new WebSocket('ws://localhost:8080/team/user');
+	ws = new WebSocket('ws://localhost:8080/codingvirus19/chat');
 	ws.onmessage = function(data) {
 		helloWorld(data.data);
 	}
