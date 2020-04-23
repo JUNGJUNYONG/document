@@ -23,18 +23,29 @@
 			margin-bottom: 20px;
 		}
 		.chating{
-			background-color: #000;
+			background-color: #fff;
 			width: 500px;
 			height: 500px;
 			overflow: auto;
 		}
 		.chating .mychat{
-			color: #F6F6F6;
+			background-color: #FF4268;
+			margin: 5px 1px 0 36%;
+			width: 55%;
+			color: #000;
 			text-align: right;
+			border-radius: 25px;
+			padding: 3%;
 		}
 		.chating .otherschat{
-			color: #FFE400;
+			background-color: #A3FFEF;
+			margin: 5px 36% 0 1px;
+			width: 55%;
+			width: 60%;
+			color: #000;
 			text-align: left;
+			border-radius: 25px;
+			padding: 3%;
 		}
 		input{
 			width: 330px;
@@ -70,14 +81,13 @@
 				// 또한, 이 파싱한 객체(jmsg)값이 "getId"값이면 초기 설정된 값이므로 채팅창에 추가한 태그 sessionId에 값을 세팅함.
 				if(jmsg.type == "getId"){
 					var sId;
-					if(jmsg.peopleId != null){
+					if(jmsg.peopleId != null && jmsg.peopleId != ''){
 						sId = jmsg.peopleId;
 					}
 					if(sId != ''){
 						$('#peopleid').val(sId);
 					}
 				}else if(jmsg.type == "message"){
-					$("#chating").scrollTop($("#chating")[0].scrollHeight);
 					
 					if(jmsg.pepleId == $('#peopleid').val()){
 						$("#chating").append("<p class='mychat'>나 : " + jmsg.msg + "</p>");
@@ -85,6 +95,7 @@
 					}else{
 						$("#chating").append("<p class='otherschat'>" + jmsg.username + " : " + jmsg.msg + "</p>");
 					}
+					$("#chating").scrollTop($("#chating")[0].scrollHeight);
 				}else{
 					console.log("채팅 동작 오류");
 				}
