@@ -9,13 +9,14 @@ import com.douzone.codingvirus19.service.MainService;
 
 
 @Controller
+@RequestMapping
 public class MainController {
 	
 	@Autowired
 	MainService mainService;
 	
 	@RequestMapping("/main")
-	public String index(Model model) {
+	public String main() {
 		return "main/index";
 	}
 	

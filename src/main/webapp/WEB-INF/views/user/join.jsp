@@ -6,7 +6,7 @@
 <!doctype html>
 <html>
 <head>
-<title>virus19 | login</title>
+<title>virus19 | join</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <script type="text/javascript" src="${pageContext.request.contextPath }/assets/jquery/jquery-3.4.1.js"></script>
 <script src="./assets/js/app.js"></script>
