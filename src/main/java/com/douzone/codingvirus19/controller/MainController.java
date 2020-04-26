@@ -15,10 +15,7 @@ public class MainController {
 	MainService mainService;
 	
 	@RequestMapping({"","/main"})
-	public String index(Model model) {
-		return "main/index";
+	public String main(Model model) {
+		return "main/main";
 	}
-	
-	
-
 }
