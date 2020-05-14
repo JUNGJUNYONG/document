@@ -22,14 +22,17 @@ public class LoginApiController {
 	private UserService userService;
 	
 	@PostMapping("/login")
+		
 	public JsonResult login(HttpSession httpSession, @RequestBody UserVo vo) {
 
 		System.out.println("Controller vo" + vo);
 		UserVo authUser = userService.findByIdAndPassword(vo);
 		httpSession.setAttribute("authUser", authUser);
 		
-		
-		return JsonResult.success(true);
+		if(authUser != null) {
+			return JsonResult.success(true);
+		}
+		return JsonResult.success(false);
 	}
 	
 	@PostMapping("/join")

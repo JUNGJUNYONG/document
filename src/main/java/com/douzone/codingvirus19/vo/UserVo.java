@@ -1,6 +1,15 @@
 package com.douzone.codingvirus19.vo;
 
 public class UserVo {
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
+	}
+
+
 	private Long no;
 	private String id;
 	private String email;
@@ -8,6 +17,7 @@ public class UserVo {
 	private String nickname;
 	private String image;
 	private String name;
+	private String role;
 
 	public Long getNo() {
 		return no;
