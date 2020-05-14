@@ -5,7 +5,7 @@ export default class ContentsHeader extends React.Component {
     return (
       <div className="contents-header">
         <div className="contents-header-title">
-          <h3>{`< 개인1 >`}</h3>
+          <h1>{`< 개인1 >`}</h1>
         </div>
         <div className="contents-header-showinglist">
           <button className="contents-header__btns">
